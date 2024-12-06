@@ -25,7 +25,19 @@ def dividir ():
         resultado = num1 * num2
         return resultado
 
-print(f"el resultado de la suma es {suma()}")
-print(f"el resultado de la resta es {resta()}")
-print(f"el resultado de la multiplicacion es {multiplicar()}")
-print(f"el resultado de la division es {multiplicar()}")
+def calculadora ():
+    while True:
+        opcion = int(input("que operación deseas hacer: "))
+        if opcion == 1:
+            print(f"El resultado de la suma es: {suma()}")
+        elif opcion ==2:
+            print(f"El resultado de la resta es: {resta()}")
+        elif opcion ==3:
+            print(f"El resultado de la multiplicacion es: {multiplicar()}")
+        elif opcion ==4:
+            print(f"el resultado de la division es {dividir()}")
+        else:
+            print("la opción que cogistes no esta disponible")
+            break
+
+calculadora()
