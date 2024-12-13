@@ -8,6 +8,11 @@ function restar(num, num2){
     return resultado
 };
 
+function potencia(num, num2){
+    let resultado = num ** num2 
+    return resultado
+};
+
 function multiplicar(num,num2){
     let resultado = num * num2
     return resultado
