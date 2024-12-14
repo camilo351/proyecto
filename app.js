@@ -26,6 +26,13 @@ let dividir = () => {
     return resultado;
 };
 
+let potencia= () => {
+    let num1 = parseInt(prompt('numero1: '))
+    let num2 = parseInt(prompt('numero2: '))
+    let resultado = num1 * num2;
+    return resultado;
+};
+
 let calculadora = () => {
     opcion = parseInt(prompt('Digite la opcion que desea: '));
     if (opcion === 1){
@@ -40,9 +47,12 @@ let calculadora = () => {
     else if (opcion === 4){
         document.write(dividir())
     }
+    else if (opcion === 5){
+        document.write(potencia())
+    }
     else{
         alert('opcion no valida')
     }
 }
 
-calculadora()
+alert(calculadora())
