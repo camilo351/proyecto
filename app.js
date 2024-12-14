@@ -1,29 +1,48 @@
-function sumar(num, num2){
-    let resultado = num + num2 
-    return resultado
+let sumar = () =>{
+    let num1 = parseInt(prompt('numero1: '))
+    let num2 = parseInt(prompt('numero2: '))
+    let resultado = num1 + num2;
+    return resultado;
 };
 
-function restar(num, num2){
-    let resultado = num - num2 
-    return resultado
+let restar = () => {
+    let num1 = parseInt(prompt('numero1: '))
+    let num2 = parseInt(prompt('numero2: '))
+    let resultado = num1 - num2;
+    return resultado;
 };
 
-function potencia(num, num2){
-    let resultado = num ** num2 
-    return resultado
+let multiplicar= () => {
+    let num1 = parseInt(prompt('numero1: '))
+    let num2 = parseInt(prompt('numero2: '))
+    let resultado = num1 * num2;
+    return resultado;
 };
 
-function multiplicar(num,num2){
-    let resultado = num * num2
-    return resultado
+let dividir = () => {
+    let num1 = parseInt(prompt('numero1: '))
+    let num2 = parseInt(prompt('numero2: '))
+    let resultado = num1 - num2;
+    return resultado;
+};
+
+let calculadora = () => {
+    opcion = parseInt(prompt('Digite la opcion que desea: '));
+    if (opcion === 1){
+        document.write(sumar())
+    }
+    else if (opcion === 2){
+        document.write(restar())
+    }
+    else if (opcion === 3){
+        document.write(multiplicar())
+    }
+    else if (opcion === 4){
+        document.write(dividir())
+    }
+    else{
+        alert('opcion no valida')
+    }
 }
 
-function dividir(num,num2){
-    let resultado = num / num2
-    return resultado
-}
-
-document.write(sumar (4, 3));
-document.write(restar (4, 3));
-document.write(restar (4, 3));
-document.write(restar (4, 3));
+calculadora()
